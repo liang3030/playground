@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
         label: 'Check eligibility',
       },
     ],
-    image: `${NEXT_PUBLIC_URL}/api/images/start`,
+    image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
     post_url: `${NEXT_PUBLIC_URL}/api/start`,
   });
 
@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: name,
       description: "Check if you're eligible for a free mint",
-      images: [`${NEXT_PUBLIC_URL}/api/images/start`],
+      images: [`https://www.furrend.xyz/blog_7.9bde0092.png`],
     },
     other: {
       ...frameMetadata,
