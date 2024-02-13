@@ -1,7 +1,7 @@
 import { CARD_DIMENSIONS, TOKEN_IMAGE } from '../config';
 
 export function Card({ message, image }: { message: string; image?: string }) {
-  const imageSrc = image ?? TOKEN_IMAGE;
+  const imageSrc = 'https://www.furrend.xyz/blog_7.9bde0092.png';
   return (
     <div
       style={{
