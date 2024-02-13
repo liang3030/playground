@@ -1,5 +1,5 @@
 import { FrameValidationData } from '@coinbase/onchainkit';
-import { ALLOWED_ORIGIN } from '../config';
+// import { ALLOWED_ORIGIN } from '../config';
 
 export function allowedOrigin(message?: FrameValidationData) {
   try {
