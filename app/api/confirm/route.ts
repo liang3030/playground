@@ -30,7 +30,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       return new NextResponse(
         getFrameHtml({
           buttons: [{ label: '⬅️ Back' }, { label: '✅ Mint' }],
-          image: `${NEXT_PUBLIC_URL}/api/images/confirm?address=${address}`,
+          image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
           post_url: `${NEXT_PUBLIC_URL}/api/relay`,
         }),
       );

@@ -20,7 +20,7 @@ export async function mintResponse() {
           target: `eip155:8453:${ZORA_COLLECTION_ADDRESS}:${ZORA_TOKEN_ID}`,
         },
       ],
-      image: `${NEXT_PUBLIC_URL}/api/images/inactive`,
+      image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
     }),
   );
 }

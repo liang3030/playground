@@ -11,7 +11,7 @@ import { mintResponse } from '../../lib/responses';
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   console.log('test');
   const body: FrameRequest = await req.json();
-  console.log(body);
+  // console.log(body);
   console.log('go here');
 
   const { isValid, message } = await getFrameMessage(body, {
@@ -41,7 +41,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
                 target: `eip155:8453:${ZORA_COLLECTION_ADDRESS}:${ZORA_TOKEN_ID}`,
               },
             ],
-            image: `${NEXT_PUBLIC_URL}/api/images/claimed`,
+            image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
           }),
         );
       } else if (transactionId) {
@@ -54,7 +54,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
               },
             ],
             post_url: `${NEXT_PUBLIC_URL}/api/check`,
-            image: `${NEXT_PUBLIC_URL}/api/images/check`,
+            image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
           }),
         );
       } else {
@@ -62,7 +62,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         return new NextResponse(
           getFrameHtml({
             buttons,
-            image: `${NEXT_PUBLIC_URL}/api/images/select`,
+            image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
             post_url: `${NEXT_PUBLIC_URL}/api/confirm`,
           }),
         );

@@ -21,7 +21,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       return new NextResponse(
         getFrameHtml({
           buttons,
-          image: `${NEXT_PUBLIC_URL}/api/images/select`,
+          image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
           post_url: `${NEXT_PUBLIC_URL}/api/confirm`,
         }),
       );
@@ -75,7 +75,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
                   },
                 ],
                 post_url: `${NEXT_PUBLIC_URL}/api/check`,
-                image: `${NEXT_PUBLIC_URL}/api/images/check`,
+                image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
               }),
             );
           }

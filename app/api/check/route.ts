@@ -74,7 +74,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
                     },
                   ],
                   post_url: `${NEXT_PUBLIC_URL}/api/check`,
-                  image: `${NEXT_PUBLIC_URL}/api/images/check`,
+                  image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
                 }),
               );
             }
@@ -109,7 +109,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
                     target: `https://basescan.org/tx/${transactionHash}`,
                   },
                 ],
-                image: `${NEXT_PUBLIC_URL}/api/images/success?address=${address}`,
+                image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
               }),
             );
           } else {
@@ -121,7 +121,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
                   },
                 ],
                 post_url: `${NEXT_PUBLIC_URL}/api/check`,
-                image: `${NEXT_PUBLIC_URL}/api/images/check`,
+                image: `https://www.furrend.xyz/blog_7.9bde0092.png`,
               }),
             );
           }
